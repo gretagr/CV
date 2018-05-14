@@ -1,0 +1,618 @@
+/*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
+/* Document
+ * ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS. */
+* {
+  box-sizing: border-box; }
+
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/* Sections
+ * ========================================================================== */
+/**
+ * Remove the margin in all browsers. */
+body {
+  margin: 0; }
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari. */
+h1 {
+  font-size: 2em; }
+
+h1, h2, h3, h4 {
+  margin: 0;
+  padding: 0; }
+
+/* Grouping content
+ * ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE. */
+ul {
+  margin: 0; }
+
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */ }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers. */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/* Text-level semantics
+ * ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10. */
+a {
+  background-color: transparent; }
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari. */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */ }
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari. */
+b, strong {
+  font-weight: bolder; }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers. */
+code, kbd, samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/**
+ * Add the correct font size in all browsers. */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers. */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+/* Embedded content
+ * ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10. */
+img {
+  border-style: none; }
+
+/* Forms
+ * ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari. */
+button, input, optgroup, select, textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */ }
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge. */
+button, input {
+  /* 1 */
+  overflow: visible; }
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox. */
+button, select {
+  /* 1 */
+  text-transform: none; }
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari. */
+button, [type="button"], [type="reset"], [type="submit"] {
+  -webkit-appearance: button; }
+
+/**
+ * Remove the inner border and padding in Firefox. */
+button::-moz-focus-inner, [type="button"]::-moz-focus-inner, [type="reset"]::-moz-focus-inner, [type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+/**
+ * Restore the focus styles unset by the previous rule. */
+button:-moz-focusring, [type="button"]:-moz-focusring, [type="reset"]:-moz-focusring, [type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+/**
+ * Correct the padding in Firefox. */
+fieldset {
+  padding: 0.35em 0.75em 0.625em; }
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers. */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */ }
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera. */
+progress {
+  vertical-align: baseline; }
+
+/**
+ * Remove the default vertical scrollbar in IE 10+. */
+textarea {
+  overflow: auto; }
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10. */
+[type="checkbox"], [type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome. */
+[type="number"]::-webkit-inner-spin-button, [type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari. */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */ }
+  [type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none; }
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS. */
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari. */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */ }
+
+/* Interactive
+ * ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox. */
+details {
+  display: block; }
+
+/*
+ * Add the correct display in all browsers. */
+summary {
+  display: list-item; }
+
+/* Misc
+ * ========================================================================== */
+/**
+ * Add the correct display in IE 10+. */
+template, [hidden] {
+  display: none; }
+
+/**
+ * Add the correct display in IE 10. */
+html {
+  font-family: "Lato", sans-serif;
+  color: #646464; }
+
+body {
+  background-color: #141414; }
+
+p {
+  font-size: 14px; }
+
+h1 {
+  font-size: 28px;
+  color: #fff; }
+
+h2 {
+  font-size: 19px;
+  font-weight: 400; }
+
+h4 {
+  font-size: 18px;
+  color: #4ea4d0;
+  font-weight: 100; }
+
+a {
+  color: #646464; }
+  a:hover {
+    color: #b1b1b1; }
+
+ul {
+  padding: 0; }
+
+li {
+  list-style-type: none;
+  font-size: 14px;
+  line-height: 28px; }
+
+span {
+  font-size: 12px;
+  line-height: 20px; }
+
+main {
+  background-color: #141414;
+  max-width: 70%;
+  height: 200px;
+  margin: 7% auto; }
+
+.social {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end; }
+  .social i {
+    padding: 10px;
+    font-size: 24px; }
+
+.profile, .resume, .portfolio, .contact {
+  background-color: #282828;
+  border-bottom: 1px solid #3e3e3e;
+  position: relative;
+  height: 60px;
+  display: block;
+  transition: height 1s; }
+  .profile.open, .resume.open, .portfolio.open, .contact.open {
+    height: auto; }
+    .profile.open .print, .profile.open .down, .resume.open .print, .resume.open .down, .portfolio.open .print, .portfolio.open .down, .contact.open .print, .contact.open .down {
+      transition: all 0.5s;
+      opacity: 1;
+      width: 60px; }
+    .profile.open .main-content, .resume.open .main-content, .portfolio.open .main-content, .contact.open .main-content {
+      display: flex; }
+    .profile.open .name, .resume.open .name, .portfolio.open .name, .contact.open .name {
+      transition: all 0.5s; }
+      .profile.open .name.prof, .resume.open .name.prof, .portfolio.open .name.prof, .contact.open .name.prof {
+        width: 135px;
+        background-color: #4ea4d0; }
+      .profile.open .name.res, .resume.open .name.res, .portfolio.open .name.res, .contact.open .name.res {
+        width: 135px;
+        background-color: #6CA338; }
+      .profile.open .name.port, .resume.open .name.port, .portfolio.open .name.port, .contact.open .name.port {
+        width: 135px;
+        background-color: #FFBC38; }
+      .profile.open .name.cont, .resume.open .name.cont, .portfolio.open .name.cont, .contact.open .name.cont {
+        width: 135px;
+        background-color: #E82C0C; }
+      .profile.open .name h2, .resume.open .name h2, .portfolio.open .name h2, .contact.open .name h2 {
+        color: #fff; }
+
+.name {
+  line-height: 60px;
+  padding-left: 15px;
+  width: 0; }
+
+footer {
+  margin-bottom: 30px;
+  text-align: right; }
+
+.down, .print, .tag {
+  width: 60px;
+  height: 60px;
+  color: #fff;
+  cursor: pointer; }
+  .icon.down, .icon.print, .icon.tag {
+    font-size: 30px;
+    text-align: center;
+    line-height: 60px;
+    margin-right: 15px;
+    position: absolute;
+    left: -60px; }
+    .icon.prof.down, .icon.prof.print, .icon.prof.tag {
+      background-color: #4ea4d0;
+      border-right: 1px solid #8ac3e0; }
+    .icon.res.down, .icon.res.print, .icon.res.tag {
+      background-color: #6CA338;
+      border-right: 1px solid #92c85f; }
+    .icon.port.down, .icon.port.print, .icon.port.tag {
+      background-color: #FFBC38;
+      border-right: 1px solid #ffd685; }
+    .icon.cont.down, .icon.cont.print, .icon.cont.tag {
+      background-color: #E82C0C;
+      border-right: 1px solid #f6644b; }
+    .icon.print {
+      left: 100%;
+      width: 0;
+      opacity: 0;
+      background-color: #6CA338; }
+    .icon.down {
+      left: 100%;
+      top: 61px;
+      width: 0;
+      opacity: 0;
+      background-color: #019875; }
+
+.skills .language span.red, .skills ul .red.bullet, .skills .progress-bar .red.value {
+  background-color: #E82C0C; }
+
+.skills .language span.blue, .skills ul .blue.bullet, .skills .progress-bar .blue.value {
+  background-color: #4ea4d0; }
+
+.skills .language span.yellow, .skills ul .yellow.bullet, .skills .progress-bar .yellow.value {
+  background-color: #FFBC38; }
+
+.skills .language span.green, .skills ul .green.bullet, .skills .progress-bar .green.value {
+  background-color: #6CA338; }
+
+.skills .language span.dark-green, .skills ul .dark-green.bullet, .skills .progress-bar .dark-green.value {
+  background-color: #019875; }
+
+.skills .language span.dark-blue, .skills ul .dark-blue.bullet, .skills .progress-bar .dark-blue.value {
+  background-color: #327EA3; }
+
+.skills .language span.bc, .skills ul .bc.bullet, .skills .progress-bar .bc.value {
+  background-color: #303030; }
+
+.skills .language {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  width: 80%; }
+  .skills .language p {
+    font-size: 12px;
+    width: 40%; }
+  .skills .language span, .skills .language p {
+    display: inline-block;
+    line-height: 15px; }
+  .skills .language span {
+    width: 17px;
+    height: 17px;
+    border-radius: 17px;
+    margin: 1px; }
+
+.skills .graph {
+  width: 130px;
+  height: 130px; }
+
+.skills p {
+  margin: 0;
+  line-height: 28px;
+  font-size: 12px; }
+
+.skills ul {
+  margin-top: 20px; }
+  .skills ul .bullet {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    border-radius: 10px;
+    margin-right: 15px; }
+  .skills ul li {
+    font-size: 12px; }
+
+.skills .progress-bar {
+  background-color: #303030;
+  width: 190px;
+  height: 15px; }
+  .skills .progress-bar.other {
+    display: flex; }
+    .skills .progress-bar.other .value {
+      display: flex;
+      border: 1px solid #303030; }
+  .skills .progress-bar .value {
+    height: 15px;
+    display: block; }
+
+/* ----------------------
+  * PROFILE styles
+  * -------------------*/
+.profile {
+  height: 160px;
+  transition: height 1s; }
+  .profile .info-list {
+    transition: all 0.5s;
+    opacity: 0; }
+  .profile h2, .profile .about {
+    display: none; }
+  .profile.open {
+    height: auto; }
+    .profile.open h2, .profile.open .about {
+      display: block; }
+    .profile.open .info-list {
+      opacity: 1; }
+    .profile.open img {
+      width: 120px;
+      height: 120px;
+      transition: all 0.5s; }
+
+.profile_header {
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 30px;
+  justify-content: space-between; }
+  .profile_header .profile_image {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 60%; }
+  .profile_header img {
+    margin-right: 30px;
+    width: 100px;
+    height: 100px;
+    border: 3px solid #3e3e3e;
+    border-radius: 1px;
+    transition: all 0.3s; }
+
+.info-list {
+  transition: all 0.5s;
+  display: flex; }
+  .info-list span {
+    display: block; }
+  .info-list .head {
+    font-weight: 700;
+    color: #fff;
+    text-align: right;
+    padding-right: 15px; }
+
+.about {
+  padding: 0 30px 40px 30px;
+  width: 100%; }
+
+/* ----------------------
+  * RESUME styles
+  * -------------------*/
+.resume {
+  transition: height 1s;
+  height: 60px; }
+  .resume .main-content {
+    justify-content: space-between;
+    padding-bottom: 30px;
+    display: none; }
+  .resume.open .skills {
+    width: 25%;
+    float: right;
+    display: flex;
+    flex-direction: column; }
+    .resume.open .skills h5 {
+      color: white;
+      font-size: 16px; }
+  .resume.open .wrapper {
+    width: 70%;
+    padding-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%; }
+    .resume.open .wrapper .education .resume_item, .resume.open .wrapper .experience .resume_item {
+      width: 90%;
+      margin: auto;
+      padding-top: 15px; }
+      .resume.open .wrapper .education .resume_item h4, .resume.open .wrapper .experience .resume_item h4 {
+        padding: 10px 0;
+        color: #fff; }
+      .resume.open .wrapper .education .resume_item span, .resume.open .wrapper .experience .resume_item span {
+        font-size: 18px;
+        display: block; }
+        .resume.open .wrapper .education .resume_item span.date, .resume.open .wrapper .experience .resume_item span.date {
+          color: #4ea4d0; }
+  .resume.open h3 {
+    color: #fff;
+    background-color: #303030;
+    font-size: 17p;
+    font-weight: 400;
+    width: 90%;
+    margin: auto; }
+    .resume.open h3 i {
+      background-color: #4ea4d0;
+      font-size: 21px;
+      padding: 5px;
+      margin-right: 15px;
+      border-radius: 4px; }
+
+/* ----------------------
+  * PORTFOLIO styles
+  * -------------------*/
+.portfolio .gallery {
+  display: none;
+  flex-wrap: wrap;
+  justify-content: start;
+  padding: 30px; }
+  .portfolio .gallery .gallery-item {
+    width: calc(100% / 3 - 10px);
+    position: relative;
+    margin: 5px; }
+    .portfolio .gallery .gallery-item a {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0; }
+    .portfolio .gallery .gallery-item img {
+      width: 100%;
+      height: 100%; }
+    .portfolio .gallery .gallery-item figcaption {
+      position: absolute;
+      top: 30%;
+      left: 0;
+      color: #fff;
+      text-align: center;
+      width: 100%;
+      height: 100%; }
+      .portfolio .gallery .gallery-item figcaption p, .portfolio .gallery .gallery-item figcaption h3 {
+        transition: all 0.4s ease-in;
+        opacity: 0; }
+      .portfolio .gallery .gallery-item figcaption h3 {
+        font-weight: 400;
+        line-height: 1px; }
+      .portfolio .gallery .gallery-item figcaption p {
+        font-size: 18px; }
+    .portfolio .gallery .gallery-item:hover p, .portfolio .gallery .gallery-item:hover h3 {
+      transition: all 0.6s;
+      opacity: 1; }
+    .portfolio .gallery .gallery-item:hover img {
+      transition: all 0.6s;
+      filter: sepia(0.3);
+      opacity: 0.1; }
+
+.portfolio.open {
+  height: auto; }
+  .portfolio.open .gallery {
+    display: flex; }
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin: 0 auto; }
+  form input {
+    height: 50px;
+    background-color: #646464;
+    border: 1px solid #646464;
+    outline: none; }
