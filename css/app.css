@@ -250,6 +250,128 @@ template, [hidden] {
 
 /**
  * Add the correct display in IE 10. */
+@media screen and (max-width: 800px) {
+  body, html {
+    width: 100vw; }
+    body main, html main {
+      width: 100%;
+      margin: 0;
+      padding: 0; }
+    body .profile, body .resume, body .portfolio, body .contact, html .profile, html .resume, html .portfolio, html .contact {
+      width: 100vw; }
+      body .profile .tag, body .resume .tag, body .portfolio .tag, body .contact .tag, html .profile .tag, html .resume .tag, html .portfolio .tag, html .contact .tag {
+        left: 0;
+        top: 0;
+        width: 100%;
+        justify-content: flex-start; }
+        body .profile .tag img, body .resume .tag img, body .portfolio .tag img, body .contact .tag img, html .profile .tag img, html .resume .tag img, html .portfolio .tag img, html .contact .tag img {
+          transform: translate(0, 0);
+          margin: 0 15px; }
+        body .profile .tag h2, body .resume .tag h2, body .portfolio .tag h2, body .contact .tag h2, html .profile .tag h2, html .resume .tag h2, html .portfolio .tag h2, html .contact .tag h2 {
+          display: block; }
+      body .profile.open .tag, body .resume.open .tag, body .portfolio.open .tag, body .contact.open .tag, html .profile.open .tag, html .resume.open .tag, html .portfolio.open .tag, html .contact.open .tag {
+        width: 100%;
+        justify-content: flex-start; }
+        body .profile.open .tag img, body .resume.open .tag img, body .portfolio.open .tag img, body .contact.open .tag img, html .profile.open .tag img, html .resume.open .tag img, html .portfolio.open .tag img, html .contact.open .tag img {
+          transform: translate(0, 0);
+          margin: 0 15px; }
+    body .profile, html .profile {
+      width: 100vw;
+      height: 60px; }
+      body .profile.open, html .profile.open {
+        height: calc(100vh - 180px);
+        min-height: 100%; }
+        body .profile.open .profile-content, html .profile.open .profile-content {
+          display: flex;
+          flex-direction: column;
+          flex-wrap: wrap;
+          padding-top: 75px; }
+          body .profile.open .profile-content .main-info, html .profile.open .profile-content .main-info {
+            width: 100%;
+            margin: 0 auto; }
+          body .profile.open .profile-content .details, html .profile.open .profile-content .details {
+            opacity: 1;
+            transform: translate(0, 0);
+            width: 100%;
+            align-items: flex-start; }
+            body .profile.open .profile-content .details span, html .profile.open .profile-content .details span {
+              text-align: left;
+              width: 100%;
+              padding-left: 30px; }
+          body .profile.open .profile-content .about, html .profile.open .profile-content .about {
+            width: 100%;
+            padding: 15px 30px;
+            display: block; }
+    body .resume .tag.print, html .resume .tag.print {
+      display: none; }
+    body .resume .main-content, html .resume .main-content {
+      padding: 75px 0 15px 0;
+      flex-wrap: wrap; }
+      body .resume .main-content .wrapper, html .resume .main-content .wrapper {
+        width: 100%; }
+        body .resume .main-content .wrapper .education, html .resume .main-content .wrapper .education {
+          padding-top: 15px; }
+        body .resume .main-content .wrapper .education, body .resume .main-content .wrapper .experience, html .resume .main-content .wrapper .education, html .resume .main-content .wrapper .experience {
+          width: 100%;
+          margin-left: 0;
+          border-bottom: none; }
+          body .resume .main-content .wrapper .education .resume_item, body .resume .main-content .wrapper .experience .resume_item, html .resume .main-content .wrapper .education .resume_item, html .resume .main-content .wrapper .experience .resume_item {
+            padding: 0 15px 30px 15px; }
+            body .resume .main-content .wrapper .education .resume_item h4, body .resume .main-content .wrapper .experience .resume_item h4, html .resume .main-content .wrapper .education .resume_item h4, html .resume .main-content .wrapper .experience .resume_item h4 {
+              letter-spacing: 2px; }
+            body .resume .main-content .wrapper .education .resume_item .side-text, body .resume .main-content .wrapper .experience .resume_item .side-text, html .resume .main-content .wrapper .education .resume_item .side-text, html .resume .main-content .wrapper .experience .resume_item .side-text {
+              position: static;
+              display: block;
+              opacity: 1;
+              transform: rotate(0);
+              letter-spacing: 15px;
+              text-align: center;
+              margin: 30px 0 45px 0;
+              padding-bottom: 15px;
+              border-bottom: 1px solid #3e3e3e; }
+      body .resume .main-content .skills, html .resume .main-content .skills {
+        width: 100%; }
+        body .resume .main-content .skills h5, html .resume .main-content .skills h5 {
+          letter-spacing: 15px;
+          text-align: center;
+          padding: 30px 0;
+          margin-bottom: 30px;
+          border-bottom: 1px solid #3e3e3e; }
+        body .resume .main-content .skills .front-end, body .resume .main-content .skills .other, body .resume .main-content .skills .graphic, body .resume .main-content .skills .languages, html .resume .main-content .skills .front-end, html .resume .main-content .skills .other, html .resume .main-content .skills .graphic, html .resume .main-content .skills .languages {
+          margin-right: 0;
+          width: 100%; }
+        body .resume .main-content .skills .front-end, body .resume .main-content .skills .other, body .resume .main-content .skills .graphic, html .resume .main-content .skills .front-end, html .resume .main-content .skills .other, html .resume .main-content .skills .graphic {
+          padding: 0 15px 15px 15px; }
+        body .resume .main-content .skills .languages, html .resume .main-content .skills .languages {
+          padding: 0;
+          padding-bottom: 15px; }
+          body .resume .main-content .skills .languages h5, html .resume .main-content .skills .languages h5 {
+            margin: 15px; }
+          body .resume .main-content .skills .languages .lang, html .resume .main-content .skills .languages .lang {
+            text-align: left;
+            padding-left: 15px; }
+    body .portfolio .gallery, html .portfolio .gallery {
+      padding: 75px 0; }
+      body .portfolio .gallery .gallery-item, html .portfolio .gallery .gallery-item {
+        position: static;
+        width: 100%;
+        max-width: 100%; }
+        body .portfolio .gallery .gallery-item img, html .portfolio .gallery .gallery-item img {
+          width: 100%;
+          max-width: 100%;
+          padding: 0 40px 0 10px; }
+    body .contact, html .contact {
+      margin-bottom: 0; }
+      body .contact form, html .contact form {
+        padding: 75px 15px 30px 15px;
+        width: 100%; }
+        body .contact form textarea, html .contact form textarea {
+          margin-bottom: 30px; }
+        body .contact form button, html .contact form button {
+          margin: 0 auto; }
+        body .contact form input, body .contact form textarea, html .contact form input, html .contact form textarea {
+          padding-left: 15px; } }
+
 html {
   color: #646464; }
 
@@ -276,7 +398,7 @@ main {
   background-color: #242528;
   max-width: 70%;
   height: 200px;
-  margin: 7% auto; }
+  margin: auto; }
 
 a {
   color: inherit; }
