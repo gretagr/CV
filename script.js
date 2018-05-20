@@ -25,9 +25,9 @@ function fillBars(bar, value)  {
       bar.style.width = width + "%";
     }
   }
-}
+};
 
-document.getElementById('resume-tag').addEventListener('click', function(){
+tags[1].addEventListener('click', function(){
   let progressBars = document.getElementsByClassName('value');
   let values = {
     "html": 95,
@@ -36,10 +36,15 @@ document.getElementById('resume-tag').addEventListener('click', function(){
     "jq": 85,
     "boot": 70,
     "sass": 90,
-    "git": 40,
-    "php": 10,
-    "pug": 40,
-    "java": 10
+    "git": 85,
+    "php": 35,
+    "pug": 80,
+    "java": 40,
+    "ps": 95,
+    "ai": 85,
+    "lr": 70,
+    "id": 45,
+    "cr": 60
   };
 
   for (let key in values ) {
@@ -50,25 +55,4 @@ document.getElementById('resume-tag').addEventListener('click', function(){
     }
   }
 
-});
-
-// gallery functions
-
-// let galleryWrapper = document.getElementById('gallery');
-//
-// let images = {
-//   "black-bird.jpg" : "Black Bird Clothing Website",
-//   "resume2.jpg" : "Personal resume website",
-//   "business.jpg" : "Bussines Consultant website",
-//   "resume.jpg" : "Online resume/portfolio website",
-//   "pink-donut.jpg" : "Pink donut website template"
-// };
-//
-// for (let image in images) {
-//   let div = document.createElement('div');
-//   galleryWrapper.appendChild(div);
-//   div.classList.add('gallery-item');
-//   div.innerHTML = '<p>' + images[image] + '</p>';
-//   div.style.backgroundImage = 'url(images/' + image + ')';
-//
-// }
+})
