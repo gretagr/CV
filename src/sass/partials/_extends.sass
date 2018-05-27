@@ -1,0 +1,73 @@
+%tag-styles
+  width: 60px
+  height: 60px
+  cursor: pointer
+  display: flex
+  align-items: center
+  justify-content: center
+  position: absolute
+  left: -60px
+  background-color: $grey-background
+  border: 1px solid $white
+  transition: all 0.5s
+
+  &:hover
+    img
+      transform: translate(0, 0)
+      transition: all 0.5s
+
+  h2
+    display: none
+    font-size: $header-small
+    color: $brown-text
+
+  img
+    width: 35px
+    transform: translate(-30px, 0)
+    transition: all 0.5s
+
+  &.eye
+    img
+      width: 40px
+
+  &.print
+    width: 0
+    opacity: 0
+    left: 100%
+
+    img
+      transform: translate(30px, 0)
+
+%open-tag
+  width: 180px
+  display: flex
+  flex-direction: row
+  justify-content: space-around
+  align-items: center
+  transition: all 0.5s
+
+  img
+    transform: translate(0, 0)
+  &.print
+    width: 60px
+    img
+      transform: translate(30px, 0)
+    &:hover
+      img
+        transform: translate(0, 0)
+
+%side-text-styles
+  position: absolute
+  color: $white
+  font-weight: 400
+  letter-spacing: 20px
+  transform: rotate(-90deg)
+  &.edu
+    top: 142px
+    left: calc(-180px + (-20%))
+  &.exp
+    top: 160px
+    left: calc(-196px + (-20%))
+  &.skill
+    top: calc(50% - 86px)
+    left: calc(100% - 70px)

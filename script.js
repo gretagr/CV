@@ -1,4 +1,4 @@
-let tags = document.getElementsByClassName('tag');
+ let tags = document.getElementsByClassName('tag');
 
 // open tabs function
 
@@ -36,7 +36,7 @@ tags[1].addEventListener('click', function(){
     "jq": 85,
     "boot": 70,
     "sass": 90,
-    "git": 85,
+    "git": 80,
     "php": 35,
     "pug": 80,
     "java": 40,
@@ -56,3 +56,10 @@ tags[1].addEventListener('click', function(){
   }
 
 })
+
+//form
+//
+// let form = document.getElementById('form');
+// form.onsubmit = function(evt){
+//   console.log('hello');
+// }

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/app.css" media="screen">
     <link rel="stylesheet" href="css/print/print.css" media="print">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Cabin:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400" rel="stylesheet">
 
@@ -73,24 +74,25 @@
               <div class="resume_item">
                 <h3 class="side-text edu">EDUCATION</h3>
                 <h4>2017 - NOW</h4>
-                <span><a href="#">UDACITY</a>, front-end nanodegree</span>
+                <span><a href="https://www.udacity.com/google-scholarships" target="_blank">UDACITY</a>, front-end nanodegree</span>
                 <p>Google & Udacity Nanodegree scholarship. First phase (google developer challenge 2017.11 2018.02) second phase (full Nanodegree  scholarship for challenge winners 2018.02 - 2018.06).</p>
               </div>
               <div class="resume_item">
                 <h4>2016 - 2017</h4>
-                <span><a href="#">VVETC</a>, web developer qualification</span>
-                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <span><a href="http://www.vtvpmc.lt/index.php/en/" target="_blank">VVETC</a>, web developer qualification</span>
+                <p>Design, develop and administrate websites (HTML5, CSS3 JAVASCRIPT).
+Basic knowlege of PhP and Java(Android) development. Profile of skills and competences: Computer hardware exploitation, ability to identify, understand and use applications, know how to configure different operating systems, able to analyze and apply security measures for information systems, competent at designing, building and managing websites.</p>
               </div>
 
               <div class="resume_item">
                 <h4>2015 - 2016</h4>
-                <span><a href="#">VVETC</a>, multimedia service provider</span>
-                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <span><a href="http://www.vtvpmc.lt/index.php/en/" target="_blank">VVETC</a>, multimedia service provider</span>
+                <p>Create different types of advertisement in the press and on the web. Create posters. Create video clips. Record and edit filmed materials. Create websites, maintain and improve them. Create a 2D/3D animation.</p>
               </div>
               <div class="resume_item">
                 <h4>2008 - 2010</h4>
                 <span>VVETCSBS, Photographer qualification</span>
-                <p>Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p>Taking photographs using various cameras, working with lighting equipment and devices, processing photographs and reproducing originals.</p>
               </div>
             </section>
 
@@ -99,13 +101,13 @@
               <div class="resume_item">
                 <h3 class="side-text exp">EMPLOYMENT</h3>
                 <h4>2012 - 2015</h4>
-                <span>SELF EMPLOYED, freelance graphic designer</span>
-                <p>Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <span>Self employed</span>
+                <p>Freelance graphic designer.</p>
               </div>
               <div class="resume_item">
                 <h4>2011 - 2015</h4>
-                <span>UAB "STUDIO MODERNA", web administrator</span>
-                <p>Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <span>UAB "STUDIO MODERNA"</span>
+                <p>Website administrator. </p>
               </div>
 
             </section>
@@ -228,7 +230,7 @@
           <figure class="gallery-item">
             <img src="images/business.png" alt="portfolio item visualisation">
             <figcaption>
-              <p>Business consultant webpage</p>
+              <p>Website Development Services</p>
               <h3>2018</h3>
             </figcaption>
             <a href="https://gretagr.github.io/business-consult/" target="_blank"></a>
@@ -237,7 +239,7 @@
           <figure class="gallery-item">
             <img src="images/resume.png" alt="portfolio item visualisation">
             <figcaption>
-              <h3>2017</h3>
+              <h3>2018</h3>
               <p>Personal portfolio website</p>
             </figcaption>
             <a href="https://gretagr.github.io/resume/" target="_blank"></a>
@@ -281,24 +283,25 @@
             <h2>CONTACT</h2>
         </nav>
 
-        <form>
+        <form id="form" name="contact-form" action="send.php" method="POST">
 
-            <input id="name" type="text" name="firstname" placeholder="first name"/>
-
-            <span></span>
-
-
-            <input type="email" name="email" placeholder="your email"/>
+            <input type="text" name="firstName" placeholder="first name" required/>
 
             <span></span>
 
-            <textarea placeholder="your message"></textarea>
 
-          <button>
+            <input type="email" name="email" placeholder="your email" required/>
+
+            <span></span>
+
+            <textarea name="message" placeholder="your message" required></textarea>
+
+          <div class="submit">
+            <input type="submit" value="">
             <div class="arrow">
               <img src="images/arrow.png" />
             </div>
-         </button>
+         </div>
         </form>
       </section>
       <!-- end of main contect class  ---------------------------->

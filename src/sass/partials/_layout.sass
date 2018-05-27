@@ -1,0 +1,258 @@
+/* ----------------------
+ ** PROFILE styles
+ ** -------------------
+.social
+  font-size: 24px
+  padding: 15px
+  text-align: right
+  i
+    padding-left: 10px
+    color: #646464
+    transition: all 0.6s
+    &:hover
+      color: lighten(#646464, 20%)
+      transition: all 0.6s
+.profile
+  height: 100px
+
+  .profile-content
+    padding-top: 20px
+    display: flex
+
+    .about
+      display: none
+
+    h1, h3
+      padding-left: 30px
+      width: 100%
+
+    h3
+      font-family: $regular-text-font
+      font-weight: 300
+
+    h2, h3, span
+      color: $brown-text
+
+    span
+      padding-bottom: 5px
+      display: block
+      text-align: right
+      margin-bottom: 20px
+      width: 70%
+      border-bottom: 1px dotted $grey-text
+
+  .main-info
+    width: 50%
+
+  .details
+    transition: all 0.8s
+    transform: translate(200px, 0)
+    opacity: 0
+    margin-right: 30px
+    width: 50%
+    display: flex
+    flex-direction: column
+    align-items: flex-end
+
+  &.open
+    height: auto
+
+    .profile-content
+      padding-top:  100px
+      justify-content: space-between
+
+    h2, .about
+      display: block
+
+    .about
+      padding: 0 30px 40px 30px
+      width: 100%
+
+    .details
+      opacity: 1
+      transform: translate(0, 0)
+
+    .tag
+      @extend %open-tag
+
+/* ----------------------
+ ** RESUME styles
+ ** -------------------
+
+
+.resume
+  transition: height 1s
+  height: 60px
+  .main-content
+    width: 100%
+    padding-bottom: 30px
+    padding-top: 90px
+    display: none
+    .wrapper, .skills
+      width: 50%
+    .wrapper
+      border-right: 1px solid $grey-lines
+      align-items: center
+      .education
+        border-bottom: 1px solid $grey-lines
+      .education, .experience
+        margin-left: 20%
+        display: flex
+        align-items: center
+        flex-wrap: wrap
+        width: 80%
+        .resume_item
+          width: 100%
+          padding: 30px 20% 30px 0
+          position: relative
+          h4
+            color: $white
+            letter-spacing: 10px
+            padding-bottom: 15px
+            font:
+              size: 16px
+              weight: 400
+          .side-text
+            @extend %side-text-styles
+
+          span
+            color: $brown-text
+            font:
+              family: $regular-text-font
+              weight: 100px
+              size: 14px
+          p
+            font:
+              family: $regular-text-font
+              weight: 300
+              size: 12px
+            color: lighten($grey-text, 40%)
+    .skills
+      display: flex
+      align-items: center
+      flex-direction: column
+      flex-wrap: nowrap
+      position: relative
+      h5
+        color: $white
+        letter-spacing: 10px
+        padding-bottom: 15px
+        font:
+          size: 16px
+          weight: 400
+      .front-end
+        .side-text
+          @extend %side-text-styles
+      .front-end, .other, .graphic
+        border-bottom: 1px solid $grey-lines
+
+      .front-end, .other, .graphic, .languages
+        width: 80%
+        padding: 0 0 60px 20%
+        margin-right: 20%
+      .languages
+        .lang
+          padding-bottom: 5px
+          display: block
+          text-align: right
+          margin-bottom: 20px
+          border-bottom: 1px dotted $grey-text
+          span
+            color: $white
+            font:
+              family: $regular-text-font
+              weight: 100
+              size: 18px
+
+
+
+  &.open
+    .tag
+      @extend %open-tag
+      h2
+        display: block
+    .main-content
+      display: flex
+
+
+
+/* ----------------------
+ ** PORTFOLIO styles
+ ** -------------------
+
+.portfolio
+  .gallery
+    display: none
+    flex-wrap: wrap
+    justify-content: start
+    padding: 80px 30px 30px 30px
+  &.open
+    height: auto
+    .tag
+      @extend %open-tag
+      h2
+        display: block
+    .gallery
+      display: flex
+.contact
+  margin-bottom: 60px
+  font-family: $headings-font
+  &.open
+    .tag
+      @extend %open-tag
+      h2
+        display: block
+    form
+      display: flex
+form
+  display: none
+  flex-direction: column
+  width: 70%
+  color: $grey-text
+  margin: 0 auto
+  padding: 60px 0
+  input, textarea, span
+    background-color: $grey-background
+    outline: none
+    border: none
+    color: $grey-text
+    border-bottom: 1px dotted lighten($grey-background, 20%)
+    margin-bottom: 15px
+    //transition: all 0.3s
+    &::placeholder
+      color: lighten($grey-text, 15%)
+      letter-spacing: 2px
+      text-transform: uppercase
+    &:hover, &:focus
+      &::placeholder
+        color: rgba(white, 0.2)
+        transition: all 0.3s
+
+  input
+    height: 50px
+  textarea
+    resize: none
+    padding: 1px 0px
+    height: 100px
+  .submit
+    height: 44px
+    width: 44px
+    position: relative
+    .arrow
+      height: 44px
+      transform: translate(-15px, 0)
+      transition: all 0.3s
+      position: absolute
+      top: 2px
+      left: 8px
+      &:hover
+        transform: translate(0, 0)
+      img
+        width: 30px
+        margin:  7px 0
+    input[type=submit]
+      width: 100%
+      height: 100%
+      border: 1px solid $white
+      background-color: $grey-background
+      outline: none

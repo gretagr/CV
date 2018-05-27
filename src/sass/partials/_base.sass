@@ -1,0 +1,159 @@
+html, body
+  width: 100%
+  margin: 0
+  padding: 0
+html
+  color: $grey-text
+
+body
+  background-color: $grey-background
+
+p
+  font-size: $small-font
+  font-family: $regular-text-font
+  font-weight: 300
+
+h1, h2, h3, h4, h5, span, li
+  font-family: $headings-font
+
+h1
+  font-size: $header-big
+  color: $white
+  font-weight: 400
+
+span
+  font-size: $small-font
+
+main
+  background-color: $grey-background
+  max-width: 70%
+  height: 200px
+  margin: 7% auto
+a
+  color: inherit
+.print
+  @extend %tag-styles
+
+.profile, .resume, .portfolio, .contact
+  background-color: $grey-background
+  border: 1px solid darken($grey-text, 15%)
+  position: relative
+  height: 60px
+  display: block
+  transition: height 1s
+
+  &.open
+    height: auto
+
+    .print
+      transition: all 0.5s
+      opacity: 1
+      width: 60px
+
+    .main-content
+      display: flex
+
+.tag
+  @extend %tag-styles
+
+
+.gallery-item
+  max-width: calc(100% / 2 - 10px)
+  max-height: 360px
+  min-width: 330px
+  overflow: hidden
+  position: relative
+  margin: 5px
+  cursor: pointer
+  text-align: center
+  -webkit-perspective: 1000px
+  perspective: 1000px
+  margin: 0 auto
+  img
+    position: relative
+    display: block
+    max-width: calc(100% - 50px)
+    min-height: 100%
+    margin: 0 auto
+    opacity: 0.7
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s
+    transition: opacity 0.35s, transform 0.35s
+    -webkit-transform: translate3d(0,0,50px)
+    transform: translate3d(0,0,50px)
+  &:hover
+    img
+      opacity: 0.1
+      filter: grayscale(0.8)
+      -webkit-transform: translate3d(0,0,0)
+      transform: translate3d(0,0,0)
+    p
+      -webkit-transform: translate3d(0,-50%,0) translate3d(0,100%,0)
+      transform: translate3d(0,-50%,0) translate3d(0,100%,0)
+    h3
+      -webkit-transform: translate3d(0,-50%,0) translate3d(0,-100%,0)
+      transform: translate3d(0,-50%,0) translate3d(0,-100%,0)
+    h3, p
+      opacity: 1
+
+    figcaption
+      &::before
+        opacity: 0.5
+        -webkit-transform: translate3d(-50%,-50%,0) rotate(45deg)
+        transform: translate3d(-50%,-50%,0) rotate(45deg)
+      &::after
+        opacity: 0.5
+        -webkit-transform: translate3d(-50%,-50%,0) rotate(-45deg)
+        transform: translate3d(-50%,-50%,0) rotate(-45deg)
+  a
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    z-index: 1000
+    opacity: 0
+  figcaption
+    padding: 2em
+    color: #fff
+    text-transform: uppercase
+    font-size: 1.2em
+    -webkit-backface-visibility: hidden
+    backface-visibility: hidden
+    &::before, &::after
+      pointer-events: none
+      position: absolute
+      top: 40%
+      left: 50%
+      width: 60%
+      height: 1px
+      background: #fff
+      content: ''
+      -webkit-transition: opacity 0.35s, -webkit-transform 0.35s
+      transition: opacity 0.35s, transform 0.35s
+      -webkit-transform: translate3d(-50%,-50%,0)
+      transform: translate3d(-50%,-50%,0)
+      opacity: 0
+    p
+      font:
+        size: $header-small
+        family: $headings-font
+        weight: 400
+      letter-spacing: 5px
+      padding: 0.25em 2em
+      -webkit-transform: translate3d(0,-50%,0) translate3d(0,150%,0)
+      transform: translate3d(0,-50%,0) translate3d(0,150%,0)
+    h3
+      letter-spacing: 20px
+      font-weight: 400
+      font-size: $header-medium
+      -webkit-transform: translate3d(0,-50%,0) translate3d(0,-150%,0)
+      transform: translate3d(0,-50%,0) translate3d(0,-150%,0)
+    h3, p
+      margin: 0
+      position: absolute
+      top: 40%
+      left: 0
+      width: 100%
+      opacity: 0
+      -webkit-transition: -webkit-transform 0.35s
+      transition: transform 0.35s

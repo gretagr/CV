@@ -481,6 +481,18 @@ a {
 /* ----------------------
  ** PROFILE styles
  ** ------------------- */
+.social {
+  font-size: 24px;
+  padding: 15px;
+  text-align: right; }
+  .social i {
+    padding-left: 10px;
+    color: #646464;
+    transition: all 0.6s; }
+    .social i:hover {
+      color: #979797;
+      transition: all 0.6s; }
+
 .profile {
   height: 100px; }
   .profile .profile-content {
@@ -657,29 +669,36 @@ form {
     resize: none;
     padding: 1px 0px;
     height: 100px; }
-  form button {
+  form .submit {
     height: 44px;
     width: 44px;
-    border: 1px solid #fff;
-    background-color: #242528;
-    outline: none; }
-    form button .arrow {
+    position: relative; }
+    form .submit .arrow {
       height: 44px;
       transform: translate(-15px, 0);
-      transition: all 0.3s; }
-      form button .arrow:hover {
+      transition: all 0.3s;
+      position: absolute;
+      top: 2px;
+      left: 8px; }
+      form .submit .arrow:hover {
         transform: translate(0, 0); }
-      form button .arrow img {
+      form .submit .arrow img {
         width: 30px;
         margin: 7px 0; }
+    form .submit input[type=submit] {
+      width: 100%;
+      height: 100%;
+      border: 1px solid #fff;
+      background-color: #242528;
+      outline: none; }
 
 @media screen and (max-width: 1024px) {
   main {
-    width: 100%;
-    margin: 0;
+    max-width: 70%;
+    margin: 0 auto;
     padding: 0; }
     main .profile, main .resume, main .portfolio, main .contact {
-      width: 95%;
+      width: 100%;
       margin: 0 auto; }
     main .profile.open .profile-content {
       display: flex;
@@ -688,20 +707,22 @@ form {
         width: 100%; }
       main .profile.open .profile-content .details {
         align-items: flex-start;
-        margin-bottom: 30px; }
+        margin-bottom: 30px;
+        margin-left: 30px; }
         main .profile.open .profile-content .details span {
+          width: 100%;
           text-align: left; } }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 700px) {
   main {
-    width: 100%;
-    min-width: 100%; }
+    width: 100vw;
+    min-width: 100vw; }
     main .profile, main .resume, main .portfolio, main .contact {
-      width: 100%; }
+      width: 100vw; }
       main .profile .tag, main .resume .tag, main .portfolio .tag, main .contact .tag {
         left: 0;
         top: 0;
-        width: 100%;
+        width: 100vw;
         justify-content: flex-start; }
         main .profile .tag img, main .resume .tag img, main .portfolio .tag img, main .contact .tag img {
           transform: translate(0, 0);
@@ -709,7 +730,7 @@ form {
         main .profile .tag h2, main .resume .tag h2, main .portfolio .tag h2, main .contact .tag h2 {
           display: block; }
       main .profile.open .tag, main .resume.open .tag, main .portfolio.open .tag, main .contact.open .tag {
-        width: 100%;
+        width: 100vw;
         justify-content: flex-start; }
         main .profile.open .tag img, main .resume.open .tag img, main .portfolio.open .tag img, main .contact.open .tag img {
           transform: translate(0, 0);
@@ -726,19 +747,20 @@ form {
           flex-wrap: wrap;
           padding-top: 75px; }
           main .profile.open .profile-content .main-info {
-            width: 100%;
+            width: 90vw;
             margin: 0 auto; }
           main .profile.open .profile-content .details {
             opacity: 1;
             transform: translate(0, 0);
-            width: 100%;
-            align-items: flex-start; }
+            width: 90vw;
+            align-items: flex-start;
+            margin: 0 auto; }
             main .profile.open .profile-content .details span {
               text-align: left;
-              width: 100%;
-              padding-left: 30px; }
+              width: 80%;
+              margin-left: 30px; }
           main .profile.open .profile-content .about {
-            width: 100%;
+            width: 90vw;
             padding: 15px 30px;
             display: block; }
     main .resume .tag.print {
@@ -747,8 +769,9 @@ form {
       padding: 75px 0 15px 0;
       flex-wrap: wrap; }
       main .resume .main-content .wrapper {
-        width: 100%;
-        border: none; }
+        width: 90%;
+        border: none;
+        margin: 0 auto; }
         main .resume .main-content .wrapper .education {
           padding-top: 15px; }
         main .resume .main-content .wrapper .education, main .resume .main-content .wrapper .experience {
@@ -770,7 +793,13 @@ form {
               padding-bottom: 15px;
               border-bottom: 1px solid #3e3e3e; }
       main .resume .main-content .skills {
-        width: 100%; }
+        width: 90%;
+        margin: 0 auto; }
+        main .resume .main-content .skills .side-text {
+          top: 0;
+          left: 0;
+          transform: rotate(0);
+          display: none; }
         main .resume .main-content .skills h5 {
           letter-spacing: 15px;
           text-align: center;
@@ -781,7 +810,7 @@ form {
           margin-right: 0;
           width: 100%; }
         main .resume .main-content .skills .front-end, main .resume .main-content .skills .other, main .resume .main-content .skills .graphic {
-          padding: 0 15px 15px 15px; }
+          padding: 0 0 15px 0; }
         main .resume .main-content .skills .languages {
           padding: 0;
           padding-bottom: 15px; }
@@ -789,7 +818,8 @@ form {
             margin: 15px; }
           main .resume .main-content .skills .languages .lang {
             text-align: left;
-            padding-left: 15px; }
+            width: 90%;
+            margin: 0 auto; }
     main .portfolio .gallery {
       padding: 75px 0; }
       main .portfolio .gallery .gallery-item {
@@ -804,7 +834,7 @@ form {
       margin-bottom: 0; }
       main .contact form {
         padding: 75px 15px 30px 15px;
-        width: 100%; }
+        width: 90%; }
         main .contact form textarea {
           margin-bottom: 30px; }
         main .contact form button {
